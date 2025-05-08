@@ -5,6 +5,7 @@ import CommunitySection from './CommunitySection';
 import SuccessStoriesSection from './SuccessStoriesSection';
 import FooterSection from './FooterSection';
 import NavBar from './NavBar';
+import TutorialsPage from './TutorialsPage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <AboutSection />
       <CommunitySection />
       <SuccessStoriesSection />
+      <TutorialsPage />
       <FooterSection />
     </div>
   );

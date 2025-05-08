@@ -3,11 +3,10 @@ import React from 'react';
 const FooterSection = () => {
   return (
     <footer className="bg-purple-900 text-white py-10 mt-10">
-      <div className="container mx-auto px-4 max-w-6xl">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <h3 className="text-xl font-bold mb-4 md:mb-0">
-            Deaf Dev Hub
-          </h3>
+      <div className="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+        {/* Left Side: Logo & Links */}
+        <div className="flex flex-col items-center md:items-start">
+          <h3 className="text-xl font-bold mb-4">Deaf Dev Hub</h3>
           <ul className="flex space-x-6 text-sm">
             <li>
               <a href="#home" className="hover:underline">Home</a>
@@ -23,7 +22,9 @@ const FooterSection = () => {
             </li>
           </ul>
         </div>
-        <div className="text-center mt-6 text-sm text-purple-200">
+
+        {/* Right Side: Copyright */}
+        <div className="text-center text-sm text-purple-200">
           © {new Date().getFullYear()} Deaf Dev Hub. All rights reserved.
         </div>
       </div>

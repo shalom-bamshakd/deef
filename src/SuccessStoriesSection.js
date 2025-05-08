@@ -1,24 +1,26 @@
 import React from 'react';
-
+import s from "../src/images/s.jpg"
+import ss from "../src/images/ss.jpg"
+import sss from "../src/images/sss.avif"
 const successStories = [
   {
     name: 'Amara',
     role: 'Frontend Developer at Google',
     story: 'Despite growing up in a non-tech background, Amara taught herself HTML and CSS. Today, she’s leading UI design at Google!',
-    image: 'https://images.unsplash.com/photo-1520975922071-ebec7570a5b2?auto=format&fit=crop&w=500&q=80',
+    image:s,
   },
   {
     name: 'Leo',
     role: 'Full Stack Developer & Mentor',
     story: 'Leo, who is deaf, built his first app using React. Now, he mentors young developers in the deaf community.',
-    image: 'https://images.unsplash.com/photo-1552058544-f2b08422138a?auto=format&fit=crop&w=500&q=80',
+    image: sss,
   },
   {
     name: 'Zara',
     role: 'AI Researcher',
     story: 'Zara combined her love for sign language and AI to build models that translate signs into text in real-time.',
-    image: 'https://images.unsplash.com/photo-1603415526960-f7e0328dfee3?auto=format&fit=crop&w=500&q=80',
-  },
+    image:ss,
+  }
 ];
 
 const SuccessStoriesSection = () => {
@@ -30,7 +32,7 @@ const SuccessStoriesSection = () => {
           {successStories.map((person, index) => (
             <div
               key={index}
-              className="bg-gray-100 rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300"
+              className="bg-gray-100 rounded-2xl shadow-slate-300 p-6 hover:shadow-xl transition-all duration-300"
             >
               <img
                 src={person.image}
