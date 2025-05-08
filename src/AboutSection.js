@@ -1,5 +1,5 @@
 import React from 'react';
-
+import tutorials from "../src/images/tutorials.jpg"
 const AboutSection = () => {
   return (
     <section className="py-16 bg-gray-50" id="about">
@@ -8,11 +8,7 @@ const AboutSection = () => {
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <img 
-              src="https://images.unsplash.com/photo-1573496773905-f5b17e717f05?q=80&w=2069&auto=format&fit=crop" 
-              alt="Person using sign language while working on a laptop" 
-              className="rounded-lg shadow-lg w-full h-auto"
-            />
+          <img src={tutorials} alt="images" />
           </div>
           
           <div className="space-y-6">
@@ -38,4 +34,4 @@ const AboutSection = () => {
   );
 };
 
-export default AboutSection;
+export default AboutSection
